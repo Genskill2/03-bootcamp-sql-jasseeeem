@@ -5,7 +5,7 @@ CREATE TABLE publisher (
 );
 
 CREATE TABLE books (
-    id SERIAL NOT NULL UNIQUE,
+    id SERIAL PRIMARY KEY,
     title TEXT,
     publisher SERIAL REFERENCES publisher(id)
 );
