@@ -3,7 +3,6 @@ import os.path
 
 import pytest
 
-
 @pytest.fixture(scope="package")
 def db():
     if os.path.exists("db.sqlite"):
